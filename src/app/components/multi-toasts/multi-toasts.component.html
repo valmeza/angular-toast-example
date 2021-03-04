@@ -1,1 +1,70 @@
-<p>multi-toasts works!</p>
+<h1>Multi Toast</h1>
+<div class="row">
+  <div class="col">
+    <app-toast id="toast-1"></app-toast>
+    <button
+      class="btn btn-success m-1"
+      (click)="toastService.success('Success!!', { id: 'toast-1' })"
+    >
+      Success
+    </button>
+    <button
+      class="btn btn-danger m-1"
+      (click)="toastService.error('Error :(', { id: 'toast-1' })"
+    >
+      Error
+    </button>
+    <button
+      class="btn btn-info m-1"
+      (click)="toastService.information('Some info', { id: 'toast-1' })"
+    >
+      Info
+    </button>
+    <button
+      class="btn btn-warning m-1"
+      (click)="toastService.warning('Warning', { id: 'toast-1' })"
+    >
+      Warning
+    </button>
+    <button
+      class="btn btn-outline-dark m-1"
+      (click)="toastService.clear('toast-1')"
+    >
+      Clear
+    </button>
+  </div>
+
+  <div class="col">
+    <app-toast id="toast-2"></app-toast>
+    <button
+      class="btn btn-success m-1"
+      (click)="toastService.success('Success!!', { id: 'toast-2' })"
+    >
+      Success
+    </button>
+    <button
+      class="btn btn-danger m-1"
+      (click)="toastService.error('Error :(', { id: 'toast-2' })"
+    >
+      Error
+    </button>
+    <button
+      class="btn btn-info m-1"
+      (click)="toastService.information('Some info', { id: 'toast-2' })"
+    >
+      Info
+    </button>
+    <button
+      class="btn btn-warning m-1"
+      (click)="toastService.warning('Warning', { id: 'toast-2' })"
+    >
+      Warning
+    </button>
+    <button
+      class="btn btn-outline-dark m-1"
+      (click)="toastService.clear('toast-2')"
+    >
+      Clear
+    </button>
+  </div>
+</div>
